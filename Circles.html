@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            position: relative;
+            height: 100vh;
+        }
+        .Ball1{
+         height: 150px;
+         width: 150px;
+         margin-top: 20px;
+         animation-name:Ballscolor;
+         background-color: aqua;
+        animation-iteration-count: infinite;
+        animation-direction:alternate-reverse;
+        border-radius: 100px;
+        animation-duration: 1s;
+        position: absolute;
+        }
+        @keyframes Ballscolor{
+            0%{
+             background-color: rgb(3, 82, 56);
+             bottom:0px;
+             }
+              /* 25%{
+             background-color: rgb(75, 202, 160);
+             top:200px; 
+              }
+             50%{
+             background-color: rgb(75, 202, 160);
+             top: 300px;
+             }
+             75%{
+             background-color: rgb(75, 202, 160);
+             bottom:400px;
+             }  */ 
+
+             100%{
+             background-color: rgb(75, 202, 160);
+             bottom:500px;
+             }
+        }
+        .Ball2{
+             height: 150px;
+            width: 150px;  
+            background-color: blueviolet;
+            border-radius: 100px;
+            animation-name:ball2;
+            position: absolute;
+            left: 170px;
+            animation-iteration-count: infinite;
+            animation-direction:alternate-reverse;
+            animation-duration: 4s;
+
+        }
+        @keyframes ball2{
+            0%{
+                background-color: rgb(227, 212, 241);
+                top:0px;
+            }
+            100%{
+                background-color: blueviolet;
+                top:500px;
+            }
+        }
+        .Ball3{
+             height: 150px;
+            width: 150px;  
+            background-color: rgb(158, 205, 182);
+            border-radius: 100px;
+            animation-name:ball3;
+            position: absolute;
+            left: 340px;
+            animation-iteration-count: infinite;
+            animation-direction:alternate-reverse;
+            animation-duration: 2s;
+        }
+        @keyframes ball3{
+            0%{
+                background-color: rgb(233, 241, 212);
+                top:0px;
+            }
+            100%{
+                background-color: rgb(231, 112, 112);
+                top:500px;
+            }
+        }
+            .Ball4{
+             height: 150px;
+            width: 150px;  
+            background-color: rgb(11, 240, 129);
+            border-radius: 100px;
+            animation-name:ball4;
+            position: absolute;
+            left: 510px;
+            animation-iteration-count: infinite;
+            animation-direction:alternate-reverse;
+            animation-duration: 3s;
+
+        }
+        @keyframes ball4{
+            0%{
+                background-color: rgb(181, 244, 21);
+                top:0px;
+            }
+            100%{
+                background-color: rgb(220, 14, 14);
+                top:500px;
+            }
+        }
+
+        .Ball5{
+            height: 150px;
+            width: 150px;  
+            background-color: rgb(11, 240, 129);
+            border-radius: 100px;
+            animation-name:ball5;
+            position: absolute;
+            left: 680px;
+            animation-iteration-count: infinite;
+            animation-direction:alternate-reverse;
+            animation-duration: 4s;
+
+        }
+        @keyframes ball5{
+            0%{
+                background-color: rgb(181, 244, 21);
+                bottom:0px;
+            }
+            100%{
+                background-color: rgb(220, 14, 14);
+                bottom:500px;
+            }
+        }
+        /* #ball2{
+            position: absolute;  (Another option to move side the Ball )
+            left: 200px;
+            margin: 30px;
+        } */
+        .div{
+            margin-top: 100px;
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="div">
+         <div class="Ball1"> </div>
+        <div id=ball2 class="Ball2"> </div>
+        <div class="Ball3"> </div>
+        <div class="Ball4"> </div>
+        <div class="Ball5"> </div>
+    </div>
+</body>  
+</html>
